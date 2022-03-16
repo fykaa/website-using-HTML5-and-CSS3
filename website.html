@@ -13,7 +13,7 @@
     /* CSS Reset */
     body {
         font-family: 'Baloo Bhai', cursive;
-        color: white;
+        color: rgb(69, 5, 5);
         margin: 0px;
         padding: 0px;
         background: url('img/bg.jpg');
@@ -21,15 +21,20 @@
 
     .left {
         display: inline-block;
-        /* border: 2px solid red; */
+        border: 2px solid rgb(59, 8, 8);
+        background-color: rgb(197, 139, 139);
         position: absolute;
         left: 60px;
+        align-items: center;
         top: 20px;
     }
 
     .left img {
         width: 136px;
-        filter: invert(100%);
+        display: block;
+        margin: auto;
+        padding: 6px;
+        filter: invert(10%);
     }
 
     .left div {
@@ -63,7 +68,7 @@
     }
 
     .navbar li a {
-        color: white;
+        color: rgb(101, 15, 15);
         text-decoration: none;
         padding: 34px 23px;
 
@@ -80,9 +85,9 @@
         font-family: 'Baloo Bhai', cursive;
         margin: 0px 9px;
         background-color: black;
-        color: white;
+        color: rgb(220, 25, 25);
         padding: 4px 14px;
-        border: 2px solid grey;
+        border: 2px solid rgb(196, 126, 126);
         border-radius: 10px;
         font-size: 20px;
         cursor: pointer;
@@ -93,7 +98,7 @@
     }
 
     .container {
-        border: 2px solid white;
+        border: 2px solid rgb(165, 75, 75);
         margin: 106px 80px;
         padding: 75px;
         width: 33%;
@@ -121,14 +126,19 @@
         width: 74%;
         margin: 20px auto;
     }
+    input{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color: darkblue;
+        border: 5px solid red;
+    }
 </style>
 
 <body>
     <header class="header">
         <!-- Left box for logo -->
         <div class="left">
-            <img src="img/gym.png" alt="">
-            <div>Harry Fitness</div>
+            <img src="https://images.firstpost.com/wp-content/uploads/2020/07/gym-shutterstock-640.jpg?impolicy=website&width=640&height=363" alt="">
+            <div>Happy Groccers</div>
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
@@ -153,21 +163,34 @@
                 <input type="text" name="" placeholder="Enter your Name">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div >
+                Gender:  
+                <input type="radio" name="Gender" Value="Male">Male
+                <input type="radio" name="Gender" Value="Male">Female
+                <input type="radio" name="Gender" Value="Male">Other
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender">
+                <select>
+                    <OPTION Value="India" selected>India</OPTION>
+                    <OPTION Value="Maharashtra">Maharashtra</OPTION>
+                    <OPTION Value="Jammu">Jammu</OPTION>
+                    <OPTION Value="Madhya Pradesh">Madhya Pradesh</OPTION>
+                    <OPTION Value="West Bengal">West Bengal</OPTION>
+                    <OPTION Value="Tamil Nadu">Tamil Nadu</OPTION>
+                    
+                </select>
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality">
+                <input type="email" name="" placeholder="Enter your Email Id">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Email Id">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Phone Number">
+                <input type="number" name="" placeholder="Enter your Phone Number">
             </div>
             <button class="btn">Submit</button>
+            <input type="reset">
+
         </form>
     </div>
 </body>

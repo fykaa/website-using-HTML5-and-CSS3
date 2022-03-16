@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(214, 41, 41);
+            /* background-color: black; */
+            background-image: url(https://images.firstpost.com/wp-content/uploads/2020/07/gym-shutterstock-640.jpg?impolicy=website&width=640&height=363);
+            background-size: 100%;
+
+
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /* border: 2px solid black; */
+            height: 180px;
+            border-radius: 10px;
+            width: 10%;
+            background-color: rgb(221, 192, 156);
+            position: absolute;
+            left: 67px;
+            top: 50px;
+        }
+
+        .left img {
+            padding: 5px;
+            width: 70%;
+            display: block;
+            margin: 22px auto;
+            border: 2px solid darkred;
+            border-radius: 20px;
+        }
+
+        .left h3 {
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(0, 29, 4); */
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 19px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 5px;
+            margin: 8px 6px;
+            color: #561717;
+            border: 2px solid white;
+            background-color: #996565;
+            border-radius: 11px;
+
+        }
+
+        .right {
+            /* border: 2px solid rgb(0, 0, 61); */
+            border-radius: 10px;
+            position: absolute;
+            top: 50px;
+            right: 67px;
+
+        }
+
+        .btn {
+
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: rgb(220, 25, 25);
+            padding: 4px 14px;
+            border: 2px solid rgb(196, 126, 126);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+        .container{
+            border: 2px solid black;
+            width: 33%;
+            padding: 75px;
+            margin: 183px 49px ;
+        }
+        .formgrp input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="https://images.firstpost.com/wp-content/uploads/2020/07/gym-shutterstock-640.jpg?impolicy=website&width=640&height=363"
+                alt="internet pls">
+            <h3>Professional Portfolio Page</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Alumnis</a></li>
+
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact Me</button>
+            <button class="btn">Email Me</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

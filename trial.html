@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHATS A WEBSITE</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .left{
+            border: 2px solid rgb(49, 7, 62);
+            border-radius: 30px;
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            background-color: rgb(113, 82, 113);
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        img{
+            width: 60%;  /*i.e % of parent class*/
+            height: 40%;
+            margin: 5px auto;
+            display: block;
+            border-radius: 23px;
+            border: black solid 2px;
+        }
+        .left h3{
+            text-align: center;
+        }
+
+        .navbar{
+            
+            margin: 20px auto;
+            display: block;
+            width: 50%;
+        }
+        .navbar li{
+            display: inline-block;
+            float: left;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: rgb(174, 91, 174);
+            list-style: none;
+            border: 2px rgb(49, 14, 49) solid;
+            margin: 8px 26px;
+                }
+        .navbar li:hover{
+            background-color: rgb(125, 107, 125);
+        }
+        .navbar a{
+            text-decoration: none;
+            color: rgb(41, 4, 41);   
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        .btn{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: rgb(220, 25, 25);
+            padding: 4px 14px;
+            border: 2px solid rgb(196, 126, 126);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+        }
+        .container {
+        border: 2px solid rgb(165, 75, 75);
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    input{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color: darkblue;
+        border: 5px solid red;
+    }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="left">
+            <img src="https://images.firstpost.com/wp-content/uploads/2020/07/gym-shutterstock-640.jpg?impolicy=website&width=640&height=363" alt="no internet">
+            <h3>WELCOME TO GROFERS!</h3>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Order Now</a></li>
+                    <li><a href="#">Let's Interact</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="btn">
+                <button >
+                Call Us Now
+            </button>
+            <button >
+                Email Us
+            </button></div>
+        </header>
+
+
+
+
+        <div class="container">
+            <h1>Join the best gym of Delhi now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter your Age">
+                </div>
+                <div >
+                    Gender:  
+                    <input type="radio" name="Gender" Value="Male">Male
+                    <input type="radio" name="Gender" Value="Male">Female
+                    <input type="radio" name="Gender" Value="Male">Other
+                </div>
+                <div class="form-group">
+                    <select>
+                        <OPTION Value="India" selected>India</OPTION>
+                        <OPTION Value="Maharashtra">Maharashtra</OPTION>
+                        <OPTION Value="Jammu">Jammu</OPTION>
+                        <OPTION Value="Madhya Pradesh">Madhya Pradesh</OPTION>
+                        <OPTION Value="West Bengal">West Bengal</OPTION>
+                        <OPTION Value="Tamil Nadu">Tamil Nadu</OPTION>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">Submit</button>
+                <input type="reset">
+    
+            </form>
+        </div>
+        
+</body>
+</html>
